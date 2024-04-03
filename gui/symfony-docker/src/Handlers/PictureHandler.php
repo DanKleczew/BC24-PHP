@@ -13,7 +13,7 @@ class PictureHandler
             case 'CARCASSE':
                 return self::IMAGE_PATH_PREFIX . 'carcasse.png';
             case 'MORCEAU':
-                return self::IMAGE_PATH_PREFIX . 'CubeSteak.png';
+                return self::IMAGE_PATH_PREFIX . 'Morceau.png';
             case 'DEMI-CARCASSE':
                 return self::IMAGE_PATH_PREFIX . 'DemiCarcasse.png';
             case 'PRODUIT':
