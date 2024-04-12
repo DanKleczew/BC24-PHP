@@ -58,6 +58,35 @@
     -webkit-appearance: none;
 }
 
+@media (max-width: 768px) {
+    .search-container {
+        margin-top: 50px;
+    }
+
+    .search-form {
+        display: block; /* Stack the input and button */
+        width: 100%; /* Ensure the form takes the full width */
+    }
+
+    .search-input {
+        width: 100%; /* Full width of its parent */
+        padding: 10px; /* Adjust padding as needed */
+        margin: 0; /* Reset margin */
+        margin-bottom: 20px; /* Space below the input */
+    }
+
+    .search-button {
+        position: relative; /* Position it relative to its new stacked layout */
+        width: 100%;
+        margin: 0;
+        text-align: center; /* Center the search icon */
+    }
+
+    .search-button img {
+        width: 24px; /* Smaller icon for smaller screens */
+    }
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .search-container {
@@ -69,8 +98,13 @@
     }
 }
 
-.search-container {
-    background-image: url('images/pic02.jpg'); /* Remplacez par le chemin correct */
-    background-size: cover;
-    background-position: center;
+@media (max-width: 480px) {
+    .search-input {
+        width: 100%; /* Adjust the width to be full-width on small screens */
+        padding: 8px; /* Adjust the padding to be smaller on small screens */
+    }
+
+    .search-button img {
+        width: 20px; /* Even smaller icon for very small screens */
+    }
 }
