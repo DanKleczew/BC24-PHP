@@ -13,11 +13,11 @@
         <div class="search-container">
             <div class="row">
                 <div class="col-12">
-            <h1 style="color: #FFFFFF;">Rechercher un produit</h1>
-            {{ form_start(form, {'attr': {'class': 'search-form'}}) }}
-            {{ form_widget(form.id, {'attr': {'class': 'search-input', 'placeholder': 'Recherche par Tag NFC'}}) }}
-            <button type="submit" class="search-button"><img src="{{ asset('images/Rechercher.png') }}" alt="Search" /></button>
-            {{ form_end(form) }}
+                    <h1 style="color: #FFFFFF; font-weight: 600;">Rechercher un produit</h1>
+                    {{ form_start(form, {'attr': {'class': 'search-form'}}) }}
+                    {{ form_widget(form.id, {'attr': {'class': 'search-input', 'placeholder': 'Recherche par Tag NFC'}}) }}
+                    <button type="submit" class="search-button"><img src="{{ asset('images/Rechercher.png') }}" alt="Search" /></button>
+                    {{ form_end(form) }}
                 </div>
             </div>
         </div>
@@ -42,11 +42,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-4 col-12-medium">
-
-                    <!-- Box -->
-                    <section class="box feature">
-                        <a href="{{ path('app_search') }}" class="image featured"><img src="{{ asset('images/Rechercher.webp') }}" alt="" /></a>
-                        <div class="inner">
+                    <section class="box feature" style="display: flex; flex-direction: column; justify-content: space-between;">
+                        <a href="{{ path('app_search') }}" class="image featured">
+                            <img src="{{ asset('images/research.jpg') }}" alt="" style="width: 100%; height: 200px; object-fit: cover;"/>
+                        </a>
+                        <div class="inner" style="padding: 10px;">
                             <header>
                                 <h2>Recherche</h2>
                                 <p>Consulter la trace d'un produit</p>
@@ -54,14 +54,13 @@
                             <p>Scannez simplement votre produit et consultez l'intégralité de son parcours grâce à la technologie de la Blockchain !</p>
                         </div>
                     </section>
-
                 </div>
                 <div class="col-4 col-12-medium">
-
-                    <!-- Box -->
-                    <section class="box feature">
-                        <a href="{{ path('app_recent') }}" class="image featured"><img src="{{ asset('images/Consulter.webp') }}" alt="" /></a>
-                        <div class="inner">
+                    <section class="box feature" style="display: flex; flex-direction: column; justify-content: space-between;">
+                        <a href="{{ path('app_recent') }}" class="image featured">
+                            <img src="{{ asset('images/consulter.jpg') }}" alt="" style="width: 100%; height: 200px; object-fit: cover;"/>
+                        </a>
+                        <div class="inner" style="padding: 10px;">
                             <header>
                                 <h2>Consultation</h2>
                                 <p>Consulter les derniers produits dangereux</p>
@@ -69,14 +68,13 @@
                             <p>Nos équipes veillent à votre santé ! Retrouvez ici tous les produits récemment déclarés impropres à la consommation.</p>
                         </div>
                     </section>
-
                 </div>
                 <div class="col-4 col-12-medium">
-
-                    <!-- Box -->
-                    <section class="box feature">
-                        <a href="{{ path('app_report_reportAliment') }}" class="image featured"><img src="{{  asset('images/Signaler.webp') }}" alt="" /></a>
-                        <div class="inner">
+                    <section class="box feature" style="display: flex; flex-direction: column; justify-content: space-between;">
+                        <a href="{{ path('app_report_reportAliment') }}" class="image featured">
+                            <img src="{{ asset('images/signaler.png') }}" alt="" style="width: 100%; height: 200px; object-fit: cover;"/>
+                        </a>
+                        <div class="inner" style="padding: 10px;">
                             <header>
                                 <h2>Signalement</h2>
                                 <p>Signaler un produit</p>
@@ -84,7 +82,6 @@
                             <p>Votre article acheté récemment semble étrange ? Signalez-le-nous, nous étudierons le problème et reviendrons vers vous</p>
                         </div>
                     </section>
-
                 </div>
             </div>
         </div>
